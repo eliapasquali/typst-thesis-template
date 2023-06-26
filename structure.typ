@@ -1,0 +1,6 @@
+#include "./preface/firstpage.typ"
+#include "./preface/copyright.typ"
+#include "./preface/dedication.typ"
+#include "./preface/summary.typ"
+#include "./preface/acknowledgements.typ"
+#include "./preface/table-of-contents.typ"
