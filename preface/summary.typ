@@ -1,3 +1,6 @@
+#set page(numbering: "i")
+#counter(page).update(1)
+
 #v(10em)
 
 #text(24pt, weight: "semibold", "Sommario")
@@ -13,4 +16,3 @@ Tale framework permette di registrare gli eventi di un controllore programmabile
 Terzo ed ultimo obbiettivo era l'integrazione ...
 
 #v(1fr)
-#pagebreak()

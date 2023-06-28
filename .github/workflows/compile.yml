@@ -19,13 +19,6 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
-          name: PDFs
+          name: Template
           path: |
-            thesis.pdf
-
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: github.ref_type == 'tag'
-        with:
-          name: "${{ github.ref_name }}"
-          files: thesis.pdf
+            *.pdf

@@ -1,5 +1,7 @@
 #import "../config/variables.typ" : profTitle, myProf, myLocation, myTime, myName
 
+#set par(first-line-indent: 0pt)
+#set page(numbering: "i")
 
 #align(right, [
     #text(style: "italic", "Tieni l'infinito per ciò che lo merita...")
@@ -9,8 +11,9 @@
 
 #v(10em)
 
-#set par(first-line-indent: 0pt)
 #text(24pt, weight: "semibold", "Ringraziamenti")
+
+#v(3em)
 
 #text(style: "italic", "Innanzitutto, vorrei esprimere la mia gratitudine al " + profTitle + myProf + " relatore della mia tesi, per l'aiuto e il sostegno fornitomi durante la stesura del lavoro.")
 
@@ -22,10 +25,8 @@
 
 #text(style: "italic", "Ho desiderio di ringraziare poi i miei amici per tutti i bellissimi anni passati insieme e le mille avventure vissute.")
 
-#v(1em)
+#v(2em)
 
 #text(style: "italic", myLocation + ", " + myTime + h(1fr) + myName)
 
 #v(1fr)
-
-#pagebreak()

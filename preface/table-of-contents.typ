@@ -1,3 +1,5 @@
+#set page(numbering: "i")
+
 #outline(
     // title: "Indice",
     indent: auto
@@ -17,5 +19,3 @@
     target: figure.where(kind: table),
     indent: auto
 )
-
-#pagebreak()

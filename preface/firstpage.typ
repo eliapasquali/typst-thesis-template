@@ -1,6 +1,8 @@
 #let logo = "../images/unipd-logo.png"
 #import "../config/variables.typ": myUni, myDepartment, myFaculty, myTitle, myDegree, profTitle, myProf, myName, myAA
 
+#set page(numbering: none)
+
 // Intestazione
 #align(center, text(18pt, weight: "semibold", myUni))
 #v(1em)
@@ -34,4 +36,3 @@
 // Anno accademico
 #line(length: 100%)
 #align(center, text(10pt, weight: 700, "ANNO ACCADEMICO " + myAA))
-#pagebreak()

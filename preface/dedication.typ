@@ -1,3 +1,5 @@
+#set page(numbering: none)
+
 #v(3cm)
 
 #align(center, [
@@ -11,5 +13,3 @@
 #align(center, [
     Dedicato a ...
 ])
-
-#pagebreak()
