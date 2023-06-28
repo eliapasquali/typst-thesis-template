@@ -1,11 +1,19 @@
-<#import "./config/variables.typ": *
+#import "./config/variables.typ": *
 #import "./config/thesis-config.typ": *
 
 // Config varie
 // Volevo spostare in un file a parte, ma non riesco a farlo funzionare
 // Se rimangono poche possono stare qui
-#set heading(numbering: "1.")
-#set text(lang: "it")
+// #set heading(numbering: "1.")
+// #set text(lang: "it")
+
+#show: config.with(
+  myAuthor: myName,
+  myTitle: myTitle,
+  myNumbering: "1.",
+  myLang: "it"
+)
+
 
 #include "structure.typ"
 
@@ -41,3 +49,20 @@ Così dovrebbe essere una reference con #sym.at\<blabla\> @logo
   ),
   caption: [Timing results],
 )
+
+
+#figure(
+  table(
+    columns: 4,
+    []
+  )
+)
+
+afaifafanfpiafkam
+
+= Sezione
+
+#lorem(100) 
+
+== Sottosezione
+#align(right + bottom, text(16pt, weight: "bold", "bla bla" ))

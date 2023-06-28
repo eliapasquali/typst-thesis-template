@@ -2,9 +2,11 @@
 #import "../config/variables.typ": myUni, myDepartment, myFaculty, myTitle, myDegree, profTitle, myProf, myName, myAA
 
 // Intestazione
-#align(center, text(18pt, weight: "bold", myUni))
-#align(center, text(15pt, weight: "light", smallcaps(myDepartment)))
-#align(center, text(15pt, weight: "light", smallcaps(myFaculty)))
+#align(center, text(18pt, weight: "semibold", myUni))
+#v(1em)
+#align(center, text(14pt, weight: "light", smallcaps(myDepartment)))
+#v(1em)
+#align(center, text(12pt, weight: "light", smallcaps(myFaculty)))
 
 #v(30pt)
 
