@@ -2,7 +2,8 @@
 
 #outline(
     // title: "Indice",
-    indent: auto
+    indent: auto,
+    depth: 5
 )
 
 #v(8em)

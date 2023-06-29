@@ -11,3 +11,4 @@
 #let myAA = "AAAA-AAAA"
 #let myTime = "Mese AAAA"
 
+#let chapterCounter = counter("chapterCounter")

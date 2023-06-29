@@ -1,12 +1,6 @@
 #import "./config/variables.typ": *
 #import "./config/thesis-config.typ": *
 
-// Config varie
-// Volevo spostare in un file a parte, ma non riesco a farlo funzionare
-// Se rimangono poche possono stare qui
-// #set heading(numbering: "1.")
-// #set text(lang: "it")
-
 #show: config.with(
   myAuthor: myName,
   myTitle: myTitle,
@@ -17,20 +11,7 @@
 
 #include "structure.typ"
 
-
-
-= Introduction
-#lorem(60)
-
-== In this paper
-#lorem(20)
-
-=== Prova sezioni
-
-=== Prova sezione 2
-=== Contributions
-#lorem(40)
-==== Prova con quattro
+= Prova figure
 #figure(
     image("images/unipd-logo.png", width: 30%),
     caption: "Prova figura"
@@ -38,8 +19,6 @@
 
 Così dovrebbe essere una reference con #sym.at\<blabla\> @logo
 
-= Related Work
-#lorem(100)
 
 #figure(
   table(
@@ -55,14 +34,6 @@ Così dovrebbe essere una reference con #sym.at\<blabla\> @logo
   table(
     columns: 4,
     []
-  )
+  ),
+  caption: [Seconda di test]
 )
-
-afaifafanfpiafkam
-
-= Sezione
-
-#lorem(100) 
-
-== Sottosezione
-#align(right + bottom, text(16pt, weight: "bold", "bla bla" ))
