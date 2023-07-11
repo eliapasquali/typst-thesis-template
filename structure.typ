@@ -9,12 +9,13 @@
 
 // Mainmatter
 
-#include "./chapters/introduzione.typ"
-#include "./chapters/processi.typ"
-#include "./chapters/kick-off.typ"
-#include "./chapters/product-prototype.typ"
+#include "./chapters/introduction.typ"
+#include "./chapters/process.typ"
+#include "./chapters/stage-description.typ"
+#include "./chapters/requirements.typ"
 #include "./chapters/product-design.typ"
-#include "./chapters/conclusioni.typ"
+#include "./chapters/product-testing.typ"
+#include "./chapters/conclusion.typ"
 
 // // Appendix
 

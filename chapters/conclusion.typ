@@ -5,8 +5,12 @@
     Capitolo #chapterCounter.display()
 ])
 
-= Conclusioni
+#v(1em)
+
+#text(18pt, [ = Conclusioni ])
 <cap:conclusioni>
+
+#v(1em)
 
 == Consuntivo finale
 

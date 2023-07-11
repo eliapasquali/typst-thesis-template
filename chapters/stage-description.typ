@@ -5,12 +5,17 @@
     Capitolo #chapterCounter.display()
 ])
 
-= Descrizione dello stage
+#v(1em)
+
+#text(18pt, [ = Descrizione dello stage ])
 <cap:descrizione-stage>
 
+#v(1em)
 #text(style: "italic", [
     Breve introduzione al capitolo
 ])
+
+#v(1em)
 
 == Analisi preventiva dei rischi
 

@@ -5,12 +5,18 @@
     Capitolo #chapterCounter.display()
 ])
 
-= Processi e metodologie
+#v(1em)
+
+#text(18pt, [ = Processi e metodologie ])
 <cap:processi-metodologie>
 
+#v(1em)
 #text(style: "italic", [
     Breve introduzione al capitolo
 ])
+
+#v(1em)
+
 
 == Processo sviluppo software
 

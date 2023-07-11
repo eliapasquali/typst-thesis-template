@@ -5,8 +5,12 @@
     Capitolo #chapterCounter.display()
 ])
 
-= Introduzione
+#v(1em)
+
+#text(18pt, [ = Introduzione ])
 <cap:introduzione>
+
+#v(1em)
 
 Introduzione al contesto applicativo.
 
