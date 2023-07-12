@@ -13,7 +13,7 @@
 
 = Prova figure
 #figure(
-    image("images/unipd-logo.png", width: 30%),
+    image("images/unipd-logo.svg", width: 30%),
     caption: "Prova figura"
 ) <logo>
 

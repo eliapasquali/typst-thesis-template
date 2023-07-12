@@ -1,4 +1,4 @@
-#let logo = "../images/unipd-logo.png"
+#let logo = "../images/unipd-logo.svg"
 #import "../config/variables.typ": myUni, myDepartment, myFaculty, myTitle, myDegree, profTitle, myProf, myName, myAA
 
 #set page(numbering: none)
@@ -13,7 +13,7 @@
 #v(30pt)
 
 // Logo
-#align(center, image("../images/unipd-logo.png", width: 40%))
+#align(center, image(logo, width: 50%))
 #v(30pt)
 
 // Titolo
