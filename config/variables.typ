@@ -1,5 +1,6 @@
 // All reusable variables here
 #let myName = "Nome Cognome"
+#let myMatricola = "42"
 #let myTitle = "Titolo della tesi"
 #let myDegree = "Tesi di laurea"
 #let myUni = "Università degli studi di Padova"

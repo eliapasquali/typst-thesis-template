@@ -1,38 +1,48 @@
 #let logo = "../images/unipd-logo.svg"
-#import "../config/variables.typ": myUni, myDepartment, myFaculty, myTitle, myDegree, profTitle, myProf, myName, myAA
+#import "../config/variables.typ": myUni, myDepartment, myFaculty, myTitle, myDegree, profTitle, myProf, myName, myMatricola, myAA
 
 #set page(numbering: none)
 
-// Intestazione
-#align(center, text(18pt, weight: "semibold", myUni))
-#v(1em)
-#align(center, text(14pt, weight: "light", smallcaps(myDepartment)))
-#v(1em)
-#align(center, text(12pt, weight: "light", smallcaps(myFaculty)))
+#grid(
+    columns: (auto),
+    rows: (1fr, auto, 20pt),
+    // Intestazione
+    [
+        #align(center, text(18pt, weight: "semibold", myUni))
+        #v(1em)
+        #align(center, text(14pt, weight: "light", smallcaps(myDepartment)))
+        #v(1em)
+        #align(center, text(12pt, weight: "light", smallcaps(myFaculty)))
+    ],
+    // Corpo
+    [
+        // Logo
+        #align(center, image(logo, width: 50%))
+        #v(30pt)
 
-#v(30pt)
+        // Titolo
+        #align(center, text(18pt, hyphenate: false, weight: "semibold", myTitle))
+        #v(10pt)
+        #align(center, text(12pt, weight: "light", style: "italic", myDegree))
+        #v(40pt)
 
-// Logo
-#align(center, image(logo, width: 50%))
-#v(30pt)
+        // Relatore e laureando
+        #align(left, text(12pt, weight: 400, style: "italic", "Relatore"))
+        #v(5pt)
+        #align(left, text(11pt, profTitle + " " + myProf))
 
-// Titolo
-#align(center, text(18pt, weight: "bold", myTitle))
-#v(10pt)
-#align(center, text(15pt, weight: "light", style: "italic", myDegree))
-#v(40pt)
+        #align(right, text(12pt, weight: 400, style: "italic", "Laureando"))
+        #v(5pt)
+        #align(right, text(11pt, myName))
+        #v(5pt)
+        #align(right, text(11pt, [_Matricola_ ] + myMatricola))
+        #v(30pt)
+    ],
+    // Piè di pagina
+    [
+        // Anno accademico
+        #line(length: 100%)
+        #align(center, text(8pt, weight: 400, smallcaps("ANNO ACCADEMICO " + myAA)))
+    ]
 
-// Relatore e laureando
-#align(left, text(14pt, weight: 600, "Relatore"))
-#v(5pt)
-#align(left, text(12pt, profTitle + " " + myProf))
-    
-#align(right, text(14pt, weight: 600, "Laureando"))
-#v(5pt)
-#align(right, text(12pt, myName))
-
-#v(40pt)
-
-// Anno accademico
-#line(length: 100%)
-#align(center, text(10pt, weight: 700, "ANNO ACCADEMICO " + myAA))
+)
