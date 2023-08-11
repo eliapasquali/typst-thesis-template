@@ -1,4 +1,5 @@
 #import "../config/variables.typ": chapterCounter
+#import "../config/thesis-config.typ": useCase
 #chapterCounter.step()
 
 #text(16pt, weight: "semibold", [
@@ -28,14 +29,19 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     caption: "Use Case - UC0: Scenario principale"
 ) <uc:scenario-principale>
 
-// TODO: rendere gli UC template riutilizzabili
-
-#text(14pt, [ *UC0: Scenario principale* ]) \
-*Attori principali*: Sviluppatore applicativi \
-*Precondizioni*: Lo sviluppatore è entrato nel plug-in di simulazione all'interno dell'IDE \
-*Descrizione*: La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test \
-*Postcondizioni*: Il sistema è pronto per permettere una nuova interazione \
-<uc:scenario-principale>
+// DONE: rendere gli UC template riutilizzabili
+// L'ordine e i nomi delle chiavi sono arbitrari, vedere la funzione nel file ..config/thesis-config.typ
+#useCase(
+    (
+        number: 0,
+        name: "Apertura plugin",
+        "Attore principale": "Sviluppatore applicativi",
+        "Precondizioni": "Lo sviluppatore è entrato nel plug-in di simulazione all'interno dell'IDE",
+        "Postcondizioni": "Il sistema è pronto per permettere una nuova interazione",
+        "Scenario principale": "La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test"
+    )
+)
+<uc:0>
 
 == Tracciamento dei requisiti
 
