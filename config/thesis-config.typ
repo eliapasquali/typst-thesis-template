@@ -21,3 +21,23 @@
 
   body
 }
+
+#let useCase(useCaseDetails) = {
+    let n = 1
+    if useCaseDetails.number != "" and useCaseDetails.name != "" {
+        text(12pt, [ *UC#useCaseDetails.number: #useCaseDetails.name* ])
+    }
+    let result = for (k, v) in useCaseDetails {
+        if k != "number" and k != "name" {
+            (text(k, weight: "bold"),
+            v,)
+        }
+        n = n + 1
+    }
+    table(
+        inset: 8pt,
+        stroke: none,
+        columns: 2,
+        ..result
+    )
+}
