@@ -45,9 +45,9 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
 
 == Tracciamento dei requisiti
 
-Durante la fase di analisi iniziale sono stati individuati alcuni possibili rischi a cui si potrà andare incontro.
+Da un'attenta analisi dei requisiti e degli use case effettuata sul progetto è stata stilata la tabella che traccia i requisiti in rapporto agli use case.
 
-Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a tali rischi.
+Sono stati individuati diversi tipi di requisiti e si è quindi fatto utilizzo di un codice identificativo per distinguerli.
 
 Il codice dei requisiti è così strutturato R(F/Q/V)(N/D/O) dove:
 
