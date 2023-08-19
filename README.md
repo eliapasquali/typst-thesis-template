@@ -3,17 +3,63 @@
 Questa repository contiene un template per la tesi triennale in Informatica.
 Il template e stato realizzato con [Typst](https://typst.app/) e ispirandosi al [template LaTeX già esistente](https://github.com/FIUP/Thesis-template.git) e alla sua versione in [Markdown](https://github.com/FIUP/pandoc-thesis-template)
 
-## Motivazioni
+## Problemi e mancanze
 
-Lo scopo di questo progetto è quello di scappare da LaTeX il più distante possibile.
+- [ ] Aggiungere glossario
+- [ ] Aggiungere appendici
+- [ ] Gestione capitoli
+- [ ] Capitoli su pagina dispari
+- [ ] Supporto alla stampa
+- [ ] Supporto PDF/A
 
-Per ora è tutto work in progress, ma si spera di arrivare ad un template completo e funzionante.
+### Aggiungere glossario
+
+Molto probabilmente tramite le [reference](https://typst.app/docs/reference/meta/ref/) presenti in Typst.
+
+### Aggiungere appendici
+
+Va aggiunta con la giusta numerazione e poi inserita nel template.
+
+### Gestione capitoli
+
+L'inizio di capitolo con la scritta _"Capitolo n"_ e poi la sezione al momento è fatta a mano, non ho trovato un corrispettivo del `\chapter{}` di LaTeX.
+
+### Capitoli su pagina dispari
+
+Esiste [un parametro](https://typst.app/docs/reference/layout/pagebreak/#parameters-to) che dovrebbe farlo in automatico. Ad alcuni funziona, ad altri no, non capisco il motivo. Inoltre Typst non elimina la numerazione dalle pagine extra, come succede in LaTeX con `\documentclass{book}`.
+
+### Supporto alla stampa
+
+Questo è legato al precedente.
+
+### Supporto PDF/A
+
+Non è ancora stato integrato in Typst.
 
 ## Utilizzo
 
 Per compilare tramite Typst è necessario installarlo (`pacman -S typst` su Arch) oppure utilizzare l'[editor online](https://typst.app/).
 
-Cercherò di rendere chiaro il funzionamento del template, la documentazione la lascio a SWE.
+Durante la scrittura è molto comodo utilizzare la funzione `watch` di Typst che aggiorna il PDF ad ogni modifica.
+
+Struttura del template:
+
+- `chapters/`: qui vanno inseriti i capitoli con l'effettivo contenuto della tesi.
+- `config/`: le varie configurazioni del template:
+  - `variables.typ`: qui vengono definite le variabili con i propri dati personali.
+- `images/`: tutte le immagini e simili raccolte qui per avere un po' di ordine.
+- `preface/`: contiene la struttura delle pagine che precedono il vero contenuto:
+  - `acknowledgements.typ`: ringraziamenti vari.
+  - `dedication.typ`: dediche e una piccola citazione.
+  - `summary.typ`: sommario in cui viene descritto di cosa tratta la tesi.
+- `structure.typ`: contiene la struttura e l'ordine dei capitoli.
+- `thesis.typ`: vera e propria tesi, file che andrà compilato per produrre il PDF.
+
+## Motivazioni
+
+Lo scopo di questo progetto è quello di scappare da LaTeX il più distante possibile.
+
+Per ora è tutto work in progress, ma si spera di arrivare ad un template completo e funzionante.
 
 ## Fonti e utilità
 

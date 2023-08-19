@@ -9,6 +9,8 @@
 
 // Mainmatter
 
+#counter(page).update(1)
+
 #include "./chapters/introduction.typ"
 #include "./chapters/process.typ"
 #include "./chapters/stage-description.typ"
@@ -28,3 +30,4 @@
 // // Bibliography
 
 // #include "./appendix/bibliography.typ"
+
