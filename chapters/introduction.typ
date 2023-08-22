@@ -1,16 +1,4 @@
-#import "../config/variables.typ": chapterCounter
-#chapterCounter.step()
-
-#text(16pt, weight: "semibold", [
-    Capitolo #chapterCounter.display()
-])
-
-#v(1em)
-
-#text(18pt, [ = Introduzione ])
-<cap:introduzione>
-
-#v(1em)
+= Introduzione
 
 Introduzione al contesto applicativo.
 
@@ -45,4 +33,4 @@ Riguardo la stesura del testo, relativamente al documento sono state adottate le
 - per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: _parola_ (glsfirstoccur);
 - i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere _corsivo_.
 
-#pagebreak()
+#pagebreak(to:"odd")

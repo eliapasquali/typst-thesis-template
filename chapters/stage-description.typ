@@ -1,13 +1,4 @@
-#import "../config/variables.typ": chapterCounter
-#chapterCounter.step()
-
-#text(16pt, weight: "semibold", [
-    Capitolo #chapterCounter.display()
-])
-
-#v(1em)
-
-#text(18pt, [ = Descrizione dello stage ])
+= Descrizione dello stage
 <cap:descrizione-stage>
 
 #v(1em)
@@ -32,4 +23,4 @@ Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a ta
 
 == Pianificazione
 
-#pagebreak()
+#pagebreak(to: "odd")

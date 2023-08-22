@@ -1,13 +1,4 @@
-#import "../config/variables.typ": chapterCounter
-#chapterCounter.step()
-
-#text(16pt, weight: "semibold", [
-    Capitolo #chapterCounter.display()
-])
-
-#v(1em)
-
-#text(18pt, [ = Progettazione e codifica ])
+= Progettazione e codifica
 <cap:progettazione-codifica>
 
 #v(1em)
@@ -40,4 +31,4 @@ Descrizione Tecnologia 2
 == Codifica
 <sec:codifica>
 
-#pagebreak()
+#pagebreak(to: "odd")

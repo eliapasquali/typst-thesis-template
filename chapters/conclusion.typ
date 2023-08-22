@@ -1,13 +1,4 @@
-#import "../config/variables.typ": chapterCounter
-#chapterCounter.step()
-
-#text(16pt, weight: "semibold", [
-    Capitolo #chapterCounter.display()
-])
-
-#v(1em)
-
-#text(18pt, [ = Conclusioni ])
+= Conclusioni
 <cap:conclusioni>
 
 #v(1em)
@@ -20,4 +11,4 @@
 
 == Valutazione personale
 
-#pagebreak()
+#pagebreak(to: "odd")

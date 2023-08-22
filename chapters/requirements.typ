@@ -1,14 +1,6 @@
-#import "../config/variables.typ": chapterCounter
 #import "../config/thesis-config.typ": useCase
-#chapterCounter.step()
 
-#text(16pt, weight: "semibold", [
-    Capitolo #chapterCounter.display()
-])
-
-#v(1em)
-
-#text(18pt, [ = Analisi dei requisiti ])
+= Analisi dei requisiti
 <cap:analisi-requisiti>
 
 #v(1em)
@@ -29,7 +21,6 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     caption: "Use Case - UC0: Scenario principale"
 ) <uc:scenario-principale>
 
-// DONE: rendere gli UC template riutilizzabili
 // L'ordine e i nomi delle chiavi sono arbitrari, vedere la funzione nel file ..config/thesis-config.typ
 #useCase(
     (
@@ -95,4 +86,4 @@ Nelle tabelle @tab:requisiti-funzionali, @tab:requisiti-qualitativi e @tab:requi
 )
 <tab:requisiti-vincolo>
 
-#pagebreak()
+#pagebreak(to: "odd")
