@@ -8,6 +8,8 @@
 #let myFaculty = "Corso di Laurea in Informatica"
 #let profTitle = "Prof. "
 #let myProf = "Nome Cognome"
+#let myCompany = "Nome azienda"
+#let myTutor = "Nome Cognome"
 #let myLocation = "Padova"
 #let myAA = "AAAA-AAAA"
 #let myTime = "Mese AAAA"
