@@ -22,11 +22,11 @@ Va aggiunta con la giusta numerazione e poi inserita nel template.
 
 ### Gestione capitoli
 
-L'inizio di capitolo con la scritta _"Capitolo n"_ e poi la sezione al momento è fatta a mano, non ho trovato un corrispettivo del `\chapter{}` di LaTeX.
+Risolto con una `show rule` come dovrebbe essere
 
 ### Capitoli su pagina dispari
 
-Esiste [un parametro](https://typst.app/docs/reference/layout/pagebreak/#parameters-to) che dovrebbe farlo in automatico. Ad alcuni funziona, ad altri no, non capisco il motivo. Inoltre Typst non elimina la numerazione dalle pagine extra, come succede in LaTeX con `\documentclass{book}`.
+Inserendo il `pagebreak(to: "odd")` all'inizio del capitolo sembra funzionare. Attenzione a non metterlo nel primo capitolo, altrimenti lo si fa cominciare a pagina 3.
 
 ### Supporto alla stampa
 
