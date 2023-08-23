@@ -1,3 +1,5 @@
+#pagebreak(to:"odd")
+
 = Descrizione dello stage
 <cap:descrizione-stage>
 
@@ -22,5 +24,3 @@ Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a ta
 == Requisiti e obiettivi
 
 == Pianificazione
-
-#pagebreak(to: "odd")

@@ -7,8 +7,8 @@ Il template e stato realizzato con [Typst](https://typst.app/) e ispirandosi al 
 
 - [ ] Aggiungere glossario
 - [ ] Aggiungere appendici
-- [ ] Gestione capitoli
-- [ ] Capitoli su pagina dispari
+- [x] Gestione capitoli
+- [x] Capitoli su pagina dispari
 - [ ] Supporto alla stampa
 - [ ] Supporto PDF/A
 

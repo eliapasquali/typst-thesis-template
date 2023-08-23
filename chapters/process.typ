@@ -1,3 +1,5 @@
+#pagebreak(to:"odd")
+
 = Processi e metodologie
 <cap:processi-metodologie>
 
@@ -10,5 +12,3 @@
 
 
 == Processo sviluppo software
-
-#pagebreak(to: "odd")

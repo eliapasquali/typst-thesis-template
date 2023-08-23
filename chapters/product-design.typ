@@ -1,3 +1,5 @@
+#pagebreak(to:"odd")
+
 = Progettazione e codifica
 <cap:progettazione-codifica>
 
@@ -30,5 +32,3 @@ Descrizione Tecnologia 2
 
 == Codifica
 <sec:codifica>
-
-#pagebreak(to: "odd")

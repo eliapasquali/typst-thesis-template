@@ -1,3 +1,5 @@
+#pagebreak(to:"odd")
+
 = Verifica e validazione
 <cap:verifica-validazione>
 
@@ -7,5 +9,3 @@
 ])
 
 #v(1em)
-
-#pagebreak(to: "odd")

@@ -1,5 +1,7 @@
 #import "../config/thesis-config.typ": useCase
 
+#pagebreak(to:"odd")
+
 = Analisi dei requisiti
 <cap:analisi-requisiti>
 
@@ -85,5 +87,3 @@ Nelle tabelle @tab:requisiti-funzionali, @tab:requisiti-qualitativi e @tab:requi
     caption: "Tabella del tracciamento dei requisti funzionali",
 )
 <tab:requisiti-vincolo>
-
-#pagebreak(to: "odd")

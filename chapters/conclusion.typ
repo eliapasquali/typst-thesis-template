@@ -1,3 +1,5 @@
+#pagebreak(to:"odd")
+
 = Conclusioni
 <cap:conclusioni>
 
@@ -10,5 +12,3 @@
 == Conoscenze acquisite
 
 == Valutazione personale
-
-#pagebreak(to: "odd")
