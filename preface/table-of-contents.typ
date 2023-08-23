@@ -1,5 +1,14 @@
 #set page(numbering: "i")
 
+#show outline.entry.where(level: 1): it => {
+  if it.element.func() == heading {
+    v(12pt, weak: true)
+    strong(it)
+  } else {
+    it
+  }
+}
+
 #outline(
     // title: "Indice",
     indent: auto,
