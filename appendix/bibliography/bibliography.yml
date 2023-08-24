@@ -1,0 +1,7 @@
+p1:
+    type: Book
+    title: Programmazione consapevole
+    author: Gilberto Filè
+    publisher: Libreria Progetto
+    page-total: 195
+    date: 2012-01-01

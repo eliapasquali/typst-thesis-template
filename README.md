@@ -7,7 +7,8 @@ Il template e stato realizzato con [Typst](https://typst.app/) e ispirandosi al 
 
 - [ ] Aggiungere glossario
 - [ ] Aggiungere appendici
-- [x] Gestione capitoli
+- [x] Aggiungere bibliografia
+- [x] Gestione "Capitolo x - Titolo capitolo"
 - [x] Capitoli su pagina dispari
 - [ ] Supporto alla stampa
 - [ ] Supporto PDF/A
@@ -20,9 +21,9 @@ Molto probabilmente tramite le [reference](https://typst.app/docs/reference/meta
 
 Va aggiunta con la giusta numerazione e poi inserita nel template.
 
-### Gestione capitoli
+### Aggiungere bibliografia
 
-Risolto con una `show rule` come dovrebbe essere
+I riferimenti bibliografici possono essere gestiti con BibTeX in `bibliography.bib` oppure con il nuovo formato Hayagriva in `bibliography.yml`. Dopo aver riempito quei file selezionare il formato desiderato in `bibliography.typ`. Le citazioni vanno inserite nel testo con `@citazione` e verranno automaticamente aggiunte alla bibliografia.
 
 ### Capitoli su pagina dispari
 
@@ -45,6 +46,11 @@ Durante la scrittura è molto comodo utilizzare la funzione `watch` di Typst che
 Struttura del template:
 
 - `chapters/`: qui vanno inseriti i capitoli con l'effettivo contenuto della tesi.
+- `appendix/`: contiene capitoli aggiuntivi, bibliografia e glossario
+  - `bibliography/`: contiene i file per la bibliografia
+    - `bibliography.bib`: file per la bibliografia in formato BibTeX
+    - `bibliography.yml`: file per la bibliografia in formato Hayagriva
+    - `bibliography.typ`: file incluso nella struttura dove viene selezionato il formato della bibliografia da utilizzare
 - `config/`: le varie configurazioni del template:
   - `variables.typ`: qui vengono definite le variabili con i propri dati personali.
 - `images/`: tutte le immagini e simili raccolte qui per avere un po' di ordine.
@@ -57,9 +63,7 @@ Struttura del template:
 
 ## Motivazioni
 
-Lo scopo di questo progetto è quello di scappare da LaTeX il più distante possibile.
-
-Per ora è tutto work in progress, ma si spera di arrivare ad un template completo e funzionante.
+Lo scopo di questo progetto è quello di creare un template funzionante in Typst, che sia il più simile possibile al template LaTeX già esistente e che sia facile da utilizzare. Adattate il template alle vostre esigenze e segnalate eventuali problemi o mancanze.
 
 ## Fonti e utilità
 

@@ -27,7 +27,6 @@
 
 // // Praticamente il glossario
 
-// // Bibliography
+// Bibliography
 
-// #include "./appendix/bibliography.typ"
-
+#include("./appendix/bibliography/bibliography.typ")
