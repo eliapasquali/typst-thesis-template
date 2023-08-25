@@ -1,19 +1,17 @@
 #set page(numbering: "i")
 
-#show outline.entry.where(level: 1): it => {
-  if it.element.func() == heading {
-    v(12pt, weak: true)
-    strong(it)
-  } else {
-    it
+#[
+  #show outline.entry.where(level: 1): it => {
+    linebreak()
+    link(it.element.location(), strong(it.body))
+    h(1fr)
+    link(it.element.location(), strong(it.page))
   }
-}
-
-#outline(
-    // title: "Indice",
+  #outline(
     indent: auto,
     depth: 5
-)
+  )
+]
 
 #v(8em)
 
