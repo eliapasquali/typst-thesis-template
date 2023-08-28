@@ -29,7 +29,7 @@
         // Relatore e laureando
         #align(left, text(12pt, weight: 400, style: "italic", "Relatore"))
         #v(5pt)
-        #align(left, text(11pt, profTitle + " " + myProf))
+        #align(left, text(11pt, profTitle + myProf))
 
         #align(right, text(12pt, weight: 400, style: "italic", "Laureando"))
         #v(5pt)
