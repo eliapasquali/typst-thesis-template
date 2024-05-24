@@ -1,3 +1,4 @@
+#import "../config/constants.typ": chapter
 #let config(
     myAuthor: "Nome cognome",
     myTitle: "Titolo",
@@ -24,7 +25,7 @@
         stack(
             spacing: 2em,
             if it.numbering != none {
-                text(size: 1.5em)[Capitolo #counter(heading).display()]
+                text(size: 1.5em)[#chapter #counter(heading).display()]
             },
             text(size:2em,it.body),
             []

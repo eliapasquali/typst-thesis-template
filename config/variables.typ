@@ -1,4 +1,5 @@
 // All reusable variables here
+#let myLang = "it"
 #let myName = "Nome Cognome"
 #let myMatricola = "42"
 #let myTitle = "Titolo della tesi"
