@@ -1,3 +1,4 @@
+#import "../config/constants.typ": figuresList, tablesList
 #set page(numbering: "i")
 
 #[
@@ -16,14 +17,14 @@
 #v(8em)
 
 #outline(
-  title: "Elenco delle figure",
+  title: figuresList,
   target: figure.where(kind: image)
 )
 
 #v(8em)
 
 #outline(
-    title: "Elenco delle tabelle",
+    title: tablesList,
     target: figure.where(kind: table),
     indent: auto
 )
