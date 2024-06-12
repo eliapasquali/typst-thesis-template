@@ -1,3 +1,7 @@
+#import "../config/thesis-config.typ": chapterHeading
+
+#show: chapterHeading.with(type: "chapter")
+
 // Non su primo capitolo
 //#pagebreak(to:"odd")
 

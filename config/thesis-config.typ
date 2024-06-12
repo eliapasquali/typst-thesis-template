@@ -19,19 +19,28 @@
     show par: set block(spacing: 0.55em)
     show heading: set block(above: 1.4em, below: 1em)
 
+    body
+}
+
+#let chapterHeading(type: "chapter" , body) = {
 
     show heading.where(level: 1): it => {
         stack(
             spacing: 2em,
             if it.numbering != none {
-                text(size: 1.5em)[Capitolo #counter(heading).display()]
+                if type == "chapter" {
+                    text(size: 1.5em)[Capitolo #counter(heading).display()]
+                }
+                if type == "appendix" {
+                    text(size: 1.5em)[Appendice #counter(heading).display()]
+                }
             },
             text(size:2em,it.body),
             []
         )
     }
 
-  body
+    body
 }
 
 #let useCase(useCaseDetails) = {

@@ -19,11 +19,14 @@
 #include "./chapters/product-testing.typ"
 #include "./chapters/conclusion.typ"
 
-// // Appendix
+// Appendix
 
-// #include "./appendix/appendice-a.typ"
+#counter(heading).update(0)
+#set heading(numbering: "A.")
 
-// // Backmatter
+#include "./appendix/appendix-a.typ"
+
+// Backmatter
 
 // // Praticamente il glossario
 

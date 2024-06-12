@@ -1,3 +1,7 @@
+#import "../config/thesis-config.typ": chapterHeading
+
+#show: chapterHeading
+
 #pagebreak(to:"odd")
 
 = Descrizione dello stage

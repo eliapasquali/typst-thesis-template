@@ -1,4 +1,6 @@
-#import "../config/thesis-config.typ": useCase
+#import "../config/thesis-config.typ": chapterHeading, useCase
+
+#show: chapterHeading.with(type: "chapter")
 
 #pagebreak(to:"odd")
 

@@ -1,3 +1,7 @@
+#import "../config/thesis-config.typ": chapterHeading
+
+#show: chapterHeading.with(type: "chapter")
+
 #pagebreak(to:"odd")
 
 = Verifica e validazione
