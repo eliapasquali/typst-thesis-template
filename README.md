@@ -37,6 +37,8 @@ Questo è legato al precedente.
 
 Non è ancora stato integrato in Typst.
 
+Per aggirare il problema è possibile utilizzare un tool di conversione, ad esempio quello di [iLovePDF](https://www.ilovepdf.com/it/pdf-in-pdfa). Per controllare il risultato invece esistono validatori come ad esempio [pdfforge](https://www.pdfforge.org/online/it/convalida-pdfa).
+
 ## Utilizzo
 
 Per compilare tramite Typst è necessario installarlo (`pacman -S typst` su Arch) oppure utilizzare l'[editor online](https://typst.app/).
