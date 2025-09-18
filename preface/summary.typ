@@ -1,9 +1,10 @@
+#import "../config/constants.typ": abstract
 #set page(numbering: "i")
 #counter(page).update(1)
 
 #v(10em)
 
-#text(24pt, weight: "semibold", "Sommario")
+#text(24pt, weight: "semibold", abstract)
 
 #v(2em)
 #set par(first-line-indent: 0pt)

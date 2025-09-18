@@ -1,5 +1,6 @@
 #let logo = "../images/unipd-logo.svg"
 #import "../config/variables.typ": myUni, myDepartment, myFaculty, myTitle, myDegree, profTitle, myProf, myName, myMatricola, myAA
+#import "../config/constants.typ": supervisor, undergraduate, academicYear, ID
 
 #set page(numbering: none)
 
@@ -27,22 +28,22 @@
         #v(40pt)
 
         // Relatore e laureando
-        #align(left, text(12pt, weight: 400, style: "italic", "Relatore"))
+        #align(left, text(12pt, weight: 400, style: "italic", supervisor))
         #v(5pt)
         #align(left, text(11pt, profTitle + myProf))
 
-        #align(right, text(12pt, weight: 400, style: "italic", "Laureando"))
+        #align(right, text(12pt, weight: 400, style: "italic", undergraduate))
         #v(5pt)
         #align(right, text(11pt, myName))
         #v(5pt)
-        #align(right, text(11pt, [_Matricola_ ] + myMatricola))
+        #align(right, text(11pt, [_ #ID _ ] + myMatricola))
         #v(30pt)
     ],
     // Piè di pagina
     [
         // Anno accademico
         #line(length: 100%)
-        #align(center, text(8pt, weight: 400, smallcaps("ANNO ACCADEMICO " + myAA)))
+        #align(center, text(8pt, weight: 400, smallcaps(academicYear + " " + myAA)))
     ]
 
 )
